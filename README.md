@@ -27,8 +27,8 @@ Users can register, log in, create tasks, edit tasks, and delete tasks.
 
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-url>
-cd <repo-folder>
+git clone https://github.com/musthafa1991/task-manager.git
+cd task-manager
 2. Install dependencies
 For frontend:
 
