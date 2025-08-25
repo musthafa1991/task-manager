@@ -38,8 +38,8 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-200 to-purple-400">
-      {/* Topbar */}
-      <div className="flex justify-between items-center bg-slate-900 p-4 text-white relative">
+      {/* Sticky Topbar */}
+      <div className="sticky top-0 z-50 flex justify-between items-center bg-slate-900 p-4 text-white">
         <h2 className="text-xl font-semibold">Hello, {user?.name}</h2>
         <div className="flex gap-3 items-center">
           <button
@@ -68,8 +68,8 @@ const Home = () => {
         task={editingTask}
       />
 
-      {/* Task List */}
-      <div className="flex flex-col items-center p-6">
+      {/* Scrollable Task List */}
+      <div className="flex flex-col items-center p-6 max-h-[calc(100vh-80px)] overflow-y-auto">
         <TaskList tasks={tasks} fetchTasks={fetchTasks} />
       </div>
     </div>
